@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{91e07428-776d-47ca-aa0f-10eaa7acfc34}</ItemsProjectGuid>
+    <ItemsProjectName>yjsEngine_SOURCE</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsCanvas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsComponent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsConstantBuffer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsEnums.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsGameObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsGraphics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsGraphicsDevice.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsGraphicsDevice_DX11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsLayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsMesh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsMeshRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsEngine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsMaterial.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsResources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsSceneManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsScript.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsShader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsTime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)yjsTransform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsComponent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsConstantBuffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsEntity.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsGameObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsGraphicsDevice_DX11.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsLayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsMesh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsMeshRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsMaterial.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsResource.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsResources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsSceneManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsScript.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsShader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsTime.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)yjsTransform.cpp" />
+  </ItemGroup>
+</Project>
